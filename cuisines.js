@@ -148,3 +148,20 @@ document.addEventListener(
 // INITIAL STATE
 
 updateSelection();
+// SURPRISE ME FOOD ROULETTE
+
+const rouletteFood = document.querySelector(".roulette-food");
+
+const rouletteFoods = ["🍕", "🌮", "🍜", "🍔"];
+
+let rouletteFoodIndex = 0;
+
+setInterval(function () {
+
+  rouletteFoodIndex =
+    (rouletteFoodIndex + 1) % rouletteFoods.length;
+
+  rouletteFood.textContent =
+    rouletteFoods[rouletteFoodIndex];
+
+}, 800);
