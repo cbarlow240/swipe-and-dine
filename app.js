@@ -94,15 +94,8 @@ continueButton.addEventListener("click", function () {
     JSON.stringify(plan)
   );
 
-  // Temporary message until we build page 2
-  alert(
-    `Perfect! We'll find ${days} ${
-      days === 1 ? "meal" : "meals"
-    } for ${people} ${
-      people === 1 ? "person" : "people"
-    }.`
-  );
-
+// Go to cuisine selection
+window.location.href = "cuisines.html";
 });
 
 
