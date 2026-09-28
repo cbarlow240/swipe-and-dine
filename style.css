@@ -45,6 +45,7 @@ button {
 .app {
   width: 100%;
   max-width: 480px;
+    overflow-x: hidden;
   min-height: 100vh;
   min-height: 100dvh;
 
