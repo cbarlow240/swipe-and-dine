@@ -880,3 +880,39 @@ button {
 .surprise-roulette .selected-check {
   z-index: 6;
 }
+/* ========================================
+   SURPRISE ME - ORANGE RED GLOW
+======================================== */
+
+.surprise-roulette {
+  border-color: rgba(255, 138, 34, 0.55);
+
+  box-shadow:
+    0 0 8px rgba(255, 138, 34, 0.20),
+    0 0 18px rgba(239, 63, 40, 0.12),
+    inset 0 0 10px rgba(255, 138, 34, 0.05);
+
+  animation: surprisePulse 3s ease-in-out infinite;
+}
+
+@keyframes surprisePulse {
+
+  0%,
+  100% {
+    border-color: rgba(255, 138, 34, 0.40);
+
+    box-shadow:
+      0 0 6px rgba(255, 138, 34, 0.15),
+      0 0 14px rgba(239, 63, 40, 0.08),
+      inset 0 0 8px rgba(255, 138, 34, 0.04);
+  }
+
+  50% {
+    border-color: rgba(239, 63, 40, 0.75);
+
+    box-shadow:
+      0 0 10px rgba(255, 138, 34, 0.30),
+      0 0 22px rgba(239, 63, 40, 0.18),
+      inset 0 0 12px rgba(239, 63, 40, 0.07);
+  }
+}
