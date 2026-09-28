@@ -844,3 +844,17 @@ button {
 .surprise-roulette .selected-check {
   z-index: 5;
 }    
+.surprise-roulette .selected-check {
+  z-index: 5;
+}
+
+
+/* ========================================
+   SURPRISE ME - MOVING GLOW
+======================================== */
+
+.surprise-roulette {
+  isolation: isolate;
+}
+
+/* rest of the new code... */
