@@ -822,33 +822,13 @@ button {
 @keyframes foodTravel {
 
   0% {
-    transform:
-      translate(-45px, -50%)
-      rotate(-25deg);
-  }
-
-  25% {
-    transform:
-      translate(calc(25vw - 20px), -50%)
-      rotate(70deg);
-  }
-
-  50% {
-    transform:
-      translate(calc(50vw - 40px), -50%)
-      rotate(160deg);
-  }
-
-  75% {
-    transform:
-      translate(calc(75vw - 70px), -50%)
-      rotate(250deg);
+    left: -45px;
+    transform: translateY(-50%) rotate(0deg);
   }
 
   100% {
-    transform:
-      translate(calc(100vw - 80px), -50%)
-      rotate(340deg);
+    left: calc(100% + 45px);
+    transform: translateY(-50%) rotate(360deg);
   }
 
 }
