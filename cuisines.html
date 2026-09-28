@@ -1,1 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
 
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+  >
+
+  <meta name="theme-color" content="#171717">
+
+  <title>Choose Your Food | Swipe & Dine</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="app cuisine-page">
+
+    <header class="cuisine-header">
+
+      <button
+        class="back-button"
+        id="backButton"
+        aria-label="Go back">
+        ←
+      </button>
+
+      <div class="small-brand">
+        Swipe <span>&</span> Dine
+      </div>
+
+      <div class="header-spacer"></div>
+
+    </header>
+
+
+    <section class="cuisine-intro">
+
+      <div class="step-label">STEP 2</div>
+
+      <h1>What do you fancy?</h1>
+
+      <p>
+        Pick as many as you like.
+        We'll mix things up for you.
+      </p>
+
+    </section>
+
+
+    <section class="cuisine-grid">
+
+      <button class="cuisine-option" data-cuisine="Italian">
+        <span class="cuisine-emoji">🇮🇹</span>
+        <span class="cuisine-name">Italian</span>
+      </button>
+
+      <button class="cuisine-option" data-cuisine="Mexican">
+        <span class="cuisine-emoji">🇲🇽</span>
+        <span class="cuisine-name">Mexican</span>
+      </button>
+
+      <button class="cuisine-option" data-cuisine="Indian">
+        <span class="cuisine-emoji">🇮🇳</span>
+        <span class="cuisine-name">Indian</span>
+      </button>
+
+      <button class="cuisine-option" data-cuisine="Chinese">
+        <span class="cuisine-emoji">🇨🇳</span>
+        <span class="cuisine-name">Chinese</span>
+      </button>
+
+      <button class="cuisine-option" data-cuisine="British">
+        <span class="cuisine-emoji">🇬🇧</span>
+        <span class="cuisine-name">British</span>
+      </button>
+
+      <button class="cuisine-option" data-cuisine="Spanish">
+        <span class="cuisine-emoji">🇪🇸</span>
+        <span class="cuisine-name">Spanish</span>
+      </button>
+
+      <button class="cuisine-option" data-cuisine="American">
+        <span class="cuisine-emoji">🇺🇸</span>
+        <span class="cuisine-name">American</span>
+      </button>
+
+      <button class="cuisine-option" data-cuisine="Mediterranean">
+        <span class="cuisine-emoji">☀️</span>
+        <span class="cuisine-name">Mediterranean</span>
+      </button>
+
+      <button class="cuisine-option" data-cuisine="Healthy">
+        <span class="cuisine-emoji">🥗</span>
+        <span class="cuisine-name">Healthy</span>
+      </button>
+
+      <button class="cuisine-option" data-cuisine="Comfort Food">
+        <span class="cuisine-emoji">🍲</span>
+        <span class="cuisine-name">Comfort Food</span>
+      </button>
+
+      <button class="cuisine-option surprise-option" data-cuisine="Surprise Me">
+        <span class="cuisine-emoji">🎲</span>
+
+        <span class="cuisine-name">
+          Surprise Me
+        </span>
+
+        <span class="surprise-text">
+          Anything goes
+        </span>
+      </button>
+
+    </section>
+
+
+    <section class="cuisine-bottom">
+
+      <p id="selectionCount">
+        Choose at least one
+      </p>
+
+      <button
+        id="startSwipingButton"
+        class="continue-button"
+        disabled>
+
+        START SWIPING
+
+        <span>→</span>
+
+      </button>
+
+    </section>
+
+  </main>
+
+
+  <script src="cuisines.js"></script>
+
+</body>
+</html>
