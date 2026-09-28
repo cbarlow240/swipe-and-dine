@@ -729,5 +729,133 @@ button {
 .cuisine-with-image:active {
   transform: scale(0.97);
 }
+/* ========================================
+   SURPRISE ME - FOOD ROULETTE
+======================================== */
 
-    
+.surprise-roulette {
+  position: relative;
+  overflow: hidden;
+
+  min-height: 105px;
+
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #25211f,
+      #181615
+    );
+}
+
+
+/* KEEP THE TEXT ABOVE THE ANIMATION */
+
+.surprise-info {
+  position: relative;
+  z-index: 3;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  padding: 18px 18px 0;
+}
+
+.surprise-info .cuisine-name {
+  color: white;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.surprise-info .surprise-text {
+  margin-top: 3px;
+
+  color: #aaa;
+  font-size: 12px;
+}
+
+
+/* AREA THE FOOD TRAVELS THROUGH */
+
+.roulette-track {
+  position: absolute;
+
+  left: 12px;
+  right: 12px;
+  bottom: 8px;
+
+  height: 42px;
+
+  overflow: hidden;
+
+  z-index: 2;
+}
+
+
+/* MOVING FOOD */
+
+.roulette-food {
+  position: absolute;
+
+  left: 0;
+  top: 50%;
+
+  font-size: 30px;
+  line-height: 1;
+
+  transform: translate(-45px, -50%);
+
+  filter:
+    drop-shadow(0 3px 5px rgba(0, 0, 0, 0.5));
+
+  animation:
+    foodTravel 3.2s linear infinite;
+
+  will-change: transform;
+}
+
+
+/* LEFT TO RIGHT LOOP */
+
+@keyframes foodTravel {
+
+  0% {
+    transform:
+      translate(-45px, -50%)
+      rotate(-25deg);
+  }
+
+  25% {
+    transform:
+      translate(calc(25vw - 20px), -50%)
+      rotate(70deg);
+  }
+
+  50% {
+    transform:
+      translate(calc(50vw - 40px), -50%)
+      rotate(160deg);
+  }
+
+  75% {
+    transform:
+      translate(calc(75vw - 70px), -50%)
+      rotate(250deg);
+  }
+
+  100% {
+    transform:
+      translate(calc(100vw - 80px), -50%)
+      rotate(340deg);
+  }
+
+}
+
+
+/* KEEP SELECTED TICK ABOVE EVERYTHING */
+
+.surprise-roulette .selected-check {
+  z-index: 5;
+}    
