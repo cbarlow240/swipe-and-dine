@@ -818,7 +818,7 @@ button {
 
 /* LEFT TO RIGHT LOOP */
 
-@keyframes foodTravel {
+@-webkit-keyframes foodTravel {
 
   0% {
     left: -45px;
