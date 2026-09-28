@@ -1,1 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta name="theme-color" content="#171717">
+
+  <title>Choose Your Meals | Swipe & Dine</title>
+
+  <link rel="stylesheet" href="style.css?v=15">
+
+</head>
+
+<body>
+
+  <main class="app swipe-page">
+
+    <!-- TOP BAR -->
+
+    <header class="swipe-header">
+
+      <button
+        class="back-button"
+        id="swipeBackButton"
+        aria-label="Go back">
+        ←
+      </button>
+
+      <div class="small-brand">
+        Swipe <span>&</span> Dine
+      </div>
+
+      <div class="header-spacer"></div>
+
+    </header>
+
+
+    <!-- PROGRESS -->
+
+    <section class="swipe-progress">
+
+      <span class="step-label">
+        STEP 3
+      </span>
+
+      <h1>Pick your meals</h1>
+
+      <p id="mealProgress">
+        0 meals chosen
+      </p>
+
+    </section>
+
+
+    <!-- SWIPE AREA -->
+
+    <section class="swipe-area">
+
+      <div
+        class="meal-card"
+        id="mealCard">
+
+        <div class="meal-image-area">
+
+          <div class="meal-placeholder">
+            🍝
+          </div>
+
+          <!-- SWIPE FEEDBACK -->
+
+          <div class="swipe-feedback pass-feedback">
+            🤢 PASS
+          </div>
+
+          <div class="swipe-feedback add-feedback">
+            🤩 ADD
+          </div>
+
+        </div>
+
+
+        <div class="meal-details">
+
+          <span class="meal-cuisine">
+            ITALIAN
+          </span>
+
+          <h2>
+            Creamy Garlic Chicken Pasta
+          </h2>
+
+          <p>
+            Tender chicken, creamy garlic sauce,
+            parmesan and pasta.
+          </p>
+
+          <div class="meal-meta">
+
+            <span>⏱️ 30 mins</span>
+
+            <span>👨‍👩‍👧 Family friendly</span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ACTION BUTTONS -->
+
+    <section class="swipe-actions">
+
+      <button
+        class="swipe-action pass-button"
+        id="passButton">
+
+        <span class="action-emoji">🤢</span>
+
+        <span>PASS</span>
+
+      </button>
+
+
+      <button
+        class="swipe-action add-button"
+        id="addButton">
+
+        <span class="action-emoji">🤩</span>
+
+        <span>ADD</span>
+
+      </button>
+
+    </section>
+
+
+    <!-- HELPER TEXT -->
+
+    <p class="swipe-hint">
+      Swipe the card or use the buttons
+    </p>
+
+  </main>
+
+
+  <script src="swipe.js?v=1"></script>
+
+</body>
+
+</html>
