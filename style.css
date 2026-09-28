@@ -1323,3 +1323,17 @@ button {
   }
 
 }
+
+
+/* MEAL CARD SWIPE CONTROL */
+
+.meal-card {
+  touch-action: pan-y;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: grab;
+}
+
+.meal-card:active {
+  cursor: grabbing;
+}
