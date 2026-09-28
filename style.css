@@ -916,3 +916,410 @@ button {
       inset 0 0 12px rgba(239, 63, 40, 0.07);
   }
 }
+/* ========================================
+   PAGE 3 - MEAL SWIPE
+======================================== */
+
+.swipe-page {
+  justify-content: flex-start;
+  padding-top: max(25px, env(safe-area-inset-top));
+  padding-bottom: max(22px, env(safe-area-inset-bottom));
+}
+
+
+/* TOP BAR */
+
+.swipe-header {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 18px;
+}
+
+
+/* PROGRESS */
+
+.swipe-progress {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.swipe-progress .step-label {
+  margin-bottom: 7px;
+}
+
+.swipe-progress h1 {
+  font-size: 30px;
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -0.7px;
+}
+
+#mealProgress {
+  margin-top: 8px;
+
+  color: var(--muted);
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+/* ========================================
+   MEAL CARD
+======================================== */
+
+.swipe-area {
+  width: 100%;
+  position: relative;
+}
+
+.meal-card {
+  width: 100%;
+
+  overflow: hidden;
+
+  border-radius: 25px;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.11);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(48, 48, 48, 0.98),
+      rgba(25, 25, 25, 0.98)
+    );
+
+  box-shadow:
+    0 20px 45px rgba(0, 0, 0, 0.40);
+
+  transition:
+    transform 0.35s ease,
+    opacity 0.35s ease;
+
+  will-change: transform, opacity;
+}
+
+
+/* MEAL IMAGE AREA */
+
+.meal-image-area {
+  position: relative;
+
+  width: 100%;
+  height: 300px;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at center,
+      #493224 0%,
+      #261e19 50%,
+      #181818 100%
+    );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.meal-placeholder {
+  font-size: 100px;
+
+  filter:
+    drop-shadow(
+      0 12px 20px rgba(0, 0, 0, 0.35)
+    );
+}
+
+
+/* ========================================
+   SWIPE FEEDBACK
+======================================== */
+
+.swipe-feedback {
+  position: absolute;
+  top: 24px;
+
+  padding: 10px 16px;
+
+  border-radius: 13px;
+
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 1px;
+
+  opacity: 0;
+
+  pointer-events: none;
+
+  z-index: 5;
+}
+
+.pass-feedback {
+  left: 20px;
+
+  border: 2px solid #ff5c5c;
+
+  background:
+    rgba(45, 10, 10, 0.82);
+
+  color: #ff7373;
+
+  transform: rotate(-8deg);
+}
+
+.add-feedback {
+  right: 20px;
+
+  border: 2px solid var(--orange);
+
+  background:
+    rgba(70, 35, 8, 0.85);
+
+  color: #ffad45;
+
+  transform: rotate(8deg);
+}
+
+
+/* ========================================
+   MEAL INFORMATION
+======================================== */
+
+.meal-details {
+  padding: 20px 20px 22px;
+}
+
+.meal-cuisine {
+  display: inline-block;
+
+  margin-bottom: 7px;
+
+  color: var(--orange);
+
+  font-size: 11px;
+  font-weight: 850;
+  letter-spacing: 1.4px;
+}
+
+.meal-details h2 {
+  color: white;
+
+  font-size: 23px;
+  line-height: 1.15;
+  font-weight: 800;
+
+  letter-spacing: -0.4px;
+}
+
+.meal-details p {
+  margin-top: 9px;
+
+  color: #bdbdbd;
+
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.meal-meta {
+  margin-top: 16px;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 8px;
+}
+
+.meal-meta span {
+  padding: 7px 10px;
+
+  border-radius: 10px;
+
+  background:
+    rgba(255, 255, 255, 0.06);
+
+  color: #dddddd;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+
+/* ========================================
+   PASS / ADD BUTTONS
+======================================== */
+
+.swipe-actions {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 12px;
+
+  margin-top: 18px;
+}
+
+.swipe-action {
+  min-height: 67px;
+
+  border-radius: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  color: white;
+
+  font-size: 15px;
+  font-weight: 850;
+  letter-spacing: 0.5px;
+
+  cursor: pointer;
+
+  touch-action: manipulation;
+
+  transition:
+    transform 0.12s ease,
+    box-shadow 0.12s ease;
+}
+
+.swipe-action:active {
+  transform: scale(0.95);
+}
+
+.action-emoji {
+  font-size: 27px;
+  line-height: 1;
+}
+
+
+/* PASS */
+
+.pass-button {
+  border:
+    1px solid rgba(255, 92, 92, 0.30);
+
+  background:
+    linear-gradient(
+      145deg,
+      #302525,
+      #211b1b
+    );
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.20);
+}
+
+
+/* ADD */
+
+.add-button {
+  border:
+    1px solid rgba(255, 138, 34, 0.55);
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--orange),
+      var(--red)
+    );
+
+  box-shadow:
+    0 10px 25px rgba(239, 63, 40, 0.25);
+}
+
+
+/* HELPER TEXT */
+
+.swipe-hint {
+  margin-top: 13px;
+
+  text-align: center;
+
+  color: #777777;
+
+  font-size: 11px;
+}
+
+
+/* ========================================
+   BUTTON CARD ANIMATIONS
+======================================== */
+
+.meal-card.card-pass {
+  transform:
+    translateX(-130%)
+    rotate(-12deg);
+
+  opacity: 0;
+}
+
+.meal-card.card-pass .pass-feedback {
+  opacity: 1;
+}
+
+.meal-card.card-add {
+  transform:
+    translateX(130%)
+    rotate(12deg);
+
+  opacity: 0;
+}
+
+.meal-card.card-add .add-feedback {
+  opacity: 1;
+}
+
+
+/* ========================================
+   SMALLER PHONES
+======================================== */
+
+@media (max-height: 750px) {
+
+  .swipe-header {
+    margin-bottom: 10px;
+  }
+
+  .swipe-progress {
+    margin-bottom: 12px;
+  }
+
+  .swipe-progress h1 {
+    font-size: 27px;
+  }
+
+  .meal-image-area {
+    height: 240px;
+  }
+
+  .meal-placeholder {
+    font-size: 82px;
+  }
+
+  .meal-details {
+    padding: 16px 18px 18px;
+  }
+
+  .meal-details h2 {
+    font-size: 21px;
+  }
+
+  .swipe-actions {
+    margin-top: 12px;
+  }
+
+  .swipe-action {
+    min-height: 60px;
+  }
+
+}
