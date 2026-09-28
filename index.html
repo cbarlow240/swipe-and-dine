@@ -1,1 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#171717">
 
+  <title>Swipe & Dine</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="app">
+
+    <header class="brand">
+      <div class="logo-icon">🍽️</div>
+
+      <h1>Swipe <span>&</span> Dine</h1>
+
+      <p>Plan dinner. Swipe what you fancy.</p>
+    </header>
+
+
+    <section class="setup-card">
+
+      <div class="setting">
+
+        <h2>How many people are you feeding?</h2>
+
+        <div class="counter">
+
+          <button
+            class="counter-button"
+            id="peopleMinus"
+            aria-label="Remove one person">
+            −
+          </button>
+
+          <div class="counter-value">
+            <span id="peopleCount">4</span>
+            <small>people</small>
+          </div>
+
+          <button
+            class="counter-button"
+            id="peoplePlus"
+            aria-label="Add one person">
+            +
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <div class="divider"></div>
+
+
+      <div class="setting">
+
+        <h2>How many days are you planning?</h2>
+
+        <div class="counter">
+
+          <button
+            class="counter-button"
+            id="daysMinus"
+            aria-label="Remove one day">
+            −
+          </button>
+
+          <div class="counter-value">
+            <span id="daysCount">7</span>
+            <small>days</small>
+          </div>
+
+          <button
+            class="counter-button"
+            id="daysPlus"
+            aria-label="Add one day">
+            +
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="summary">
+
+      <span class="summary-icon">✓</span>
+
+      <p>
+        Planning
+        <strong id="summaryMeals">7 meals</strong>
+        for
+        <strong id="summaryPeople">4 people</strong>
+      </p>
+
+    </section>
+
+
+    <button id="continueButton" class="continue-button">
+
+      CHOOSE YOUR FOOD
+
+      <span>→</span>
+
+    </button>
+
+
+    <p class="footer-text">
+      Your perfect meal plan is just a few swipes away.
+    </p>
+
+  </main>
+
+
+  <script src="app.js"></script>
+
+</body>
+</html>
