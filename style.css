@@ -576,6 +576,158 @@ button {
   }
 
 }
+/* ========================================
+   CUISINE IMAGE CARDS
+======================================== */
 
+.cuisine-with-image {
+  position: relative;
+  overflow: hidden;
+
+  height: 120px;
+  padding: 0;
+
+  border-radius: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.12);
+
+  background: #211a16;
+
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.35);
+
+  display: block;
+}
+
+
+/* FOOD IMAGE */
+
+.cuisine-image {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 78px;
+
+  object-fit: cover;
+  object-position: center;
+
+  display: block;
+}
+
+
+/* DARK NAME BAR */
+
+.cuisine-label {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 42px;
+
+  padding: 0 12px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(24, 20, 18, 0.98),
+      rgba(35, 31, 29, 0.96)
+    );
+}
+
+
+/* FLAG */
+
+.cuisine-flag {
+  font-size: 22px;
+  line-height: 1;
+}
+
+
+/* CUISINE NAME */
+
+.cuisine-with-image .cuisine-name {
+  font-size: 15px;
+  font-weight: 750;
+  color: white;
+}
+
+
+/* SELECTED TICK */
+
+.selected-check {
+  position: absolute;
+
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+
+  background: var(--orange);
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+  font-weight: 800;
+
+  opacity: 0;
+  transform: scale(0.7);
+
+  transition:
+    opacity 0.15s ease,
+    transform 0.15s ease;
+
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+
+/* SELECTED CARD */
+
+.cuisine-with-image.selected {
+  border-color: var(--orange);
+
+  background: #211a16;
+
+  box-shadow:
+    0 0 0 1px rgba(255, 138, 34, 0.35),
+    0 0 22px rgba(255, 138, 34, 0.25);
+}
+
+
+/* SHOW TICK WHEN SELECTED */
+
+.cuisine-with-image.selected .selected-check {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+/* KEEP IMAGE NORMAL WHEN SELECTED */
+
+.cuisine-with-image.selected .cuisine-image {
+  opacity: 1;
+}
+
+
+/* TAP EFFECT */
+
+.cuisine-with-image:active {
+  transform: scale(0.97);
+}
 
     
