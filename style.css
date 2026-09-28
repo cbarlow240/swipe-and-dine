@@ -805,7 +805,7 @@ button {
   font-size: 30px;
   line-height: 1;
 
-  transform: translate(-45px, -50%);
+  transform: translateY(-50%);
 
   filter:
     drop-shadow(0 3px 5px rgba(0, 0, 0, 0.5));
