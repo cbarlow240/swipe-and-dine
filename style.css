@@ -452,6 +452,8 @@ button {
 
 .cuisine-option {
   min-height: 92px;
+    min-width: 0;
+  width: 100%;
   padding: 14px 10px;
 
   border-radius: 18px;
