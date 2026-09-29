@@ -1385,36 +1385,45 @@ button {
 
 
 /* HOMEPAGE ANIMATED HERO */
-.hero-intro {
+
+.hero-brand {
   position: relative;
   width: 100%;
-  height: 320px;
+  height: 220px;
   overflow: hidden;
+  border-radius: 18px;
+  margin-bottom: 20px;
 }
-.hero-bg {
+
+.hero-brand .hero-bg {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  z-index: 1;
 }
-.hero-swipe,
-.hero-dine,
-.hero-ampersand {
+
+.hero-brand .hero-swipe,
+.hero-brand .hero-dine,
+.hero-brand .hero-ampersand {
   position: absolute;
   z-index: 2;
 }
-.hero-swipe {
+
+.hero-brand .hero-swipe {
   width: 46%;
   left: 15%;
   top: 25%;
 }
-.hero-dine {
+
+.hero-brand .hero-dine {
   width: 42%;
   right: 14%;
   top: 40%;
 }
-.hero-ampersand {
+
+.hero-brand .hero-ampersand {
   width: 11%;
   left: 45%;
   top: 42%;
