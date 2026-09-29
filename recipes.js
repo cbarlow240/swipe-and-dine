@@ -19,6 +19,7 @@ const recipes = [
     "Classic Italian spaghetti tossed with crispy pancetta, egg, Pecorino and black pepper for a rich, silky sauce.",
 
   servings: 4,
+  estimatedServingWeight: 350,
 
   prepTime: 10,
   cookTime: 20,
