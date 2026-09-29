@@ -34,8 +34,30 @@ const backButton =
 // MEAL SELECTION
 
 let chosenMeals = 0;
+const currentRecipe = recipes[0];
+// DISPLAY CURRENT RECIPE
 
+function displayRecipe() {
 
+  const cuisine =
+    mealCard.querySelector(".meal-cuisine");
+
+  const title =
+    mealCard.querySelector("h2");
+
+  const description =
+    mealCard.querySelector(".meal-details p");
+
+  cuisine.textContent =
+    currentRecipe.cuisine.toUpperCase();
+
+  title.textContent =
+    currentRecipe.name;
+
+  description.textContent =
+    currentRecipe.description;
+
+}
 // UPDATE PROGRESS
 
 function updateProgress() {
@@ -259,4 +281,5 @@ mealCard.addEventListener("pointercancel", function () {
 
 // INITIAL SCREEN
 
+displayRecipe();
 updateProgress();
