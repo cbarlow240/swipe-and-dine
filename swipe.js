@@ -69,7 +69,7 @@ metaItems[1].textContent =
 
 const difficultyBadge =
   document.createElement("span");
-
+difficultyBadge.className = "difficulty-badge";
 difficultyBadge.textContent =
   `⭐ ${currentRecipe.difficulty}`;
 
