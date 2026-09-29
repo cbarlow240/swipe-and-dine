@@ -65,7 +65,17 @@ time.textContent =
   mealCard.querySelectorAll(".meal-meta span");
 
 metaItems[1].textContent =
-  `👨‍👩‍👧 ${currentRecipe.tags[1]}`;
+  `🌍 ${currentRecipe.cuisine}`;
+
+const difficultyBadge =
+  document.createElement("span");
+
+difficultyBadge.textContent =
+  `⭐ ${currentRecipe.difficulty}`;
+
+mealCard
+  .querySelector(".meal-meta")
+  .appendChild(difficultyBadge);
 }
 // UPDATE PROGRESS
 
