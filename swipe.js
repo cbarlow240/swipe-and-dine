@@ -190,6 +190,7 @@ addButton.addEventListener("click", function () {
   setTimeout(function () {
 
     mealCard.classList.remove("card-add");
+    showNextRecipe();
 
   }, 350);
 
