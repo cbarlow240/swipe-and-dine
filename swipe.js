@@ -37,7 +37,8 @@ const backButton =
 // MEAL SELECTION
 
 let chosenMeals = 0;
-const currentRecipe = recipes[0];
+let currentRecipeIndex = 0;
+let currentRecipe = recipes[currentRecipeIndex];
 const cuisineIcons = {
   Italian: "🇮🇹",
   Mexican: "🇲🇽",
