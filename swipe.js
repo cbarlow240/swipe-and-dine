@@ -125,6 +125,19 @@ difficultyBadge.textContent =
   </span>
 `;
 }
+function showNextRecipe() {
+
+  currentRecipeIndex++;
+
+  if (currentRecipeIndex >= recipes.length) {
+    currentRecipeIndex = 0;
+  }
+
+  currentRecipe = recipes[currentRecipeIndex];
+
+  displayRecipe();
+}
+
 // UPDATE PROGRESS
 
 function updateProgress() {
