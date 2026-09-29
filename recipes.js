@@ -142,4 +142,193 @@ const recipes = [
 
   image: "images/meals/italian-spaghetti-carbonara.webp"
 },
+  {
+  id: "italian-chicken-parmigiana",
+
+  name: "Chicken Parmigiana",
+
+  cuisine: "Italian",
+
+  tags: [
+    "Family Friendly",
+    "Comfort Food"
+  ],
+
+  description:
+    "Crispy breaded chicken topped with rich tomato sauce, melted mozzarella and Parmesan.",
+
+  servings: 4,
+
+  estimatedServingWeight: 400,
+
+  prepTime: 20,
+  cookTime: 30,
+  totalTime: 50,
+
+  difficulty: "Medium",
+
+  cost: "££",
+
+  ingredients: [
+    {
+      id: "chicken_breast",
+      name: "Chicken breasts",
+      quantity: 4,
+      unit: "whole",
+      category: "Meat",
+      optional: false
+    },
+
+    {
+      id: "plain_flour",
+      name: "Plain flour",
+      quantity: 50,
+      unit: "g",
+      category: "Baking",
+      optional: false
+    },
+
+    {
+      id: "eggs",
+      name: "Large eggs",
+      quantity: 2,
+      unit: "whole",
+      category: "Dairy & Eggs",
+      optional: false
+    },
+
+    {
+      id: "breadcrumbs",
+      name: "Breadcrumbs",
+      quantity: 120,
+      unit: "g",
+      category: "Bakery",
+      optional: false
+    },
+
+    {
+      id: "parmesan",
+      name: "Parmesan",
+      quantity: 60,
+      unit: "g",
+      category: "Dairy & Eggs",
+      optional: false
+    },
+
+    {
+      id: "passata",
+      name: "Passata",
+      quantity: 400,
+      unit: "g",
+      category: "Tins, Jars & Sauces",
+      optional: false
+    },
+
+    {
+      id: "mozzarella",
+      name: "Mozzarella",
+      quantity: 125,
+      unit: "g",
+      category: "Dairy & Eggs",
+      optional: false
+    },
+
+    {
+      id: "garlic",
+      name: "Garlic cloves",
+      quantity: 2,
+      unit: "whole",
+      category: "Fruit & Vegetables",
+      optional: false
+    },
+
+    {
+      id: "olive_oil",
+      name: "Olive oil",
+      quantity: 2,
+      unit: "tbsp",
+      category: "Oils & Condiments",
+      optional: false
+    },
+
+    {
+      id: "dried_oregano",
+      name: "Dried oregano",
+      quantity: 1,
+      unit: "tsp",
+      category: "Herbs & Spices",
+      optional: false
+    }
+  ],
+
+  instructions: [
+    "Heat the oven to 200°C fan.",
+    "Place the chicken breasts between sheets of baking paper and gently flatten them to an even thickness.",
+    "Put the flour, beaten eggs and breadcrumbs into three separate shallow dishes.",
+    "Mix half of the grated Parmesan into the breadcrumbs.",
+    "Coat each chicken breast first in flour, then egg, then the Parmesan breadcrumbs.",
+    "Heat the olive oil in a large frying pan and cook the chicken for 3 to 4 minutes on each side until golden.",
+    "Add the garlic to a small saucepan and cook briefly, then add the passata and oregano and simmer for 10 minutes.",
+    "Place the chicken in an ovenproof dish and spoon the tomato sauce over each piece.",
+    "Top with mozzarella and the remaining Parmesan.",
+    "Bake for 15 to 20 minutes until the chicken is cooked through and the cheese is bubbling and golden."
+  ],
+
+  nutrition: {
+    calories: {
+      value: 610,
+      unit: "kcal"
+    },
+
+    fat: {
+      value: 25,
+      unit: "g",
+      per100g: 6.25,
+      status: "high"
+    },
+
+    saturates: {
+      value: 9,
+      unit: "g",
+      per100g: 2.25,
+      status: "high"
+    },
+
+    sugars: {
+      value: 7,
+      unit: "g",
+      per100g: 1.75,
+      status: "low"
+    },
+
+    salt: {
+      value: 1.6,
+      unit: "g",
+      per100g: 0.4,
+      status: "medium"
+    },
+
+    protein: 61,
+    carbs: 35,
+    fibre: 3
+  },
+
+  allergens: [
+    "Gluten",
+    "Egg",
+    "Milk"
+  ],
+
+  dietary: [],
+
+  equipment: [
+    "Large frying pan",
+    "Small saucepan",
+    "Ovenproof dish",
+    "Three shallow dishes",
+    "Baking paper"
+  ],
+
+  image: "images/meals/italian-chicken-parmigiana.webp"
+}
 ];
