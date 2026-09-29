@@ -1345,3 +1345,40 @@ button {
   object-fit: cover;
   display: block;
 }
+/* NUTRITION BADGES */
+
+.nutrition-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.nutrition-meta span {
+  padding: 5px 9px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.nutrition-calories {
+  background: #333;
+  color: #fff;
+}
+
+.nutrition-low {
+  background: #2e7d32;
+  color: #fff;
+}
+
+.nutrition-medium {
+  background: #e89b00;
+  color: #fff;
+}
+
+.nutrition-high {
+  background: #c62828;
+  color: #fff;
+}
