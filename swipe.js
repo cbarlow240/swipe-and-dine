@@ -65,7 +65,7 @@ time.textContent =
   mealCard.querySelectorAll(".meal-meta span");
 
 metaItems[1].textContent =
-  `🌍 ${currentRecipe.cuisine}`;
+  `🇮🇹 ${currentRecipe.cuisine}`;
 
 let difficultyBadge =
   mealCard.querySelector(".difficulty-badge");
