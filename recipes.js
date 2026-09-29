@@ -86,15 +86,39 @@ const recipes = [
   ],
 
   nutrition: {
-    calories: 650,
-    protein: 31,
-    carbs: 76,
-    fat: 24,
-    saturatedFat: 9,
-    fibre: 4,
-    sugar: 3,
-    salt: 1.8
+  calories: {
+    value: 650,
+    unit: "kcal"
   },
+
+  fat: {
+    value: 24,
+    unit: "g",
+    status: "high"
+  },
+
+  saturates: {
+    value: 9,
+    unit: "g",
+    status: "high"
+  },
+
+  sugars: {
+    value: 3,
+    unit: "g",
+    status: "low"
+  },
+
+  salt: {
+    value: 1.8,
+    unit: "g",
+    status: "high"
+  },
+
+  protein: 31,
+  carbs: 76,
+  fibre: 4
+},
 
   allergens: [
     "Gluten",
