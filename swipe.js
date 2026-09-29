@@ -18,6 +18,9 @@ const mealsNeeded = savedPlan.days || 1;
 const mealCard =
   document.getElementById("mealCard");
 
+const nutritionMeta =
+  mealCard.querySelector(".nutrition-meta");
+
 const mealProgress =
   document.getElementById("mealProgress");
 
