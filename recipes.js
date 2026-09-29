@@ -141,5 +141,5 @@ const recipes = [
   ],
 
   image: "images/meals/italian-spaghetti-carbonara.webp"
-}
+},
 ];
