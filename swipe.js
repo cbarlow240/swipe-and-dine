@@ -189,10 +189,13 @@ addButton.addEventListener("click", function () {
 
   setTimeout(function () {
 
-    mealCard.classList.remove("card-add");
-    showNextRecipe();
+  mealCard.classList.remove("card-add");
+  showNextRecipe();
 
-  }, 350);
+  mealCard.style.transform = "";
+  mealCard.style.opacity = "";
+
+}, 350);
 
 });
 
