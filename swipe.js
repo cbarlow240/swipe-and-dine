@@ -67,15 +67,24 @@ time.textContent =
 metaItems[1].textContent =
   `🌍 ${currentRecipe.cuisine}`;
 
-const difficultyBadge =
-  document.createElement("span");
-difficultyBadge.className = "difficulty-badge";
+let difficultyBadge =
+  mealCard.querySelector(".difficulty-badge");
+
+if (!difficultyBadge) {
+
+  difficultyBadge =
+    document.createElement("span");
+
+  difficultyBadge.className =
+    "difficulty-badge";
+
+  mealCard
+    .querySelector(".meal-meta")
+    .appendChild(difficultyBadge);
+}
+
 difficultyBadge.textContent =
   `⭐ ${currentRecipe.difficulty}`;
-
-mealCard
-  .querySelector(".meal-meta")
-  .appendChild(difficultyBadge);
 }
 // UPDATE PROGRESS
 
