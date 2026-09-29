@@ -117,9 +117,7 @@ startSwipingButton.addEventListener("click", function () {
     JSON.stringify(savedPlan)
   );
 
-  alert(
-    `Selected: ${selectedCuisines.join(", ")}`
-  );
+  window.location.href = "swipe.html";
 
 });
 
