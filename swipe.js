@@ -35,6 +35,19 @@ const backButton =
 
 let chosenMeals = 0;
 const currentRecipe = recipes[0];
+const cuisineIcons = {
+  Italian: "🇮🇹",
+  Mexican: "🇲🇽",
+  Indian: "🇮🇳",
+  Chinese: "🇨🇳",
+  British: "🇬🇧",
+  Spanish: "🇪🇸",
+  American: "🇺🇸",
+  Mediterranean: "🌊",
+  Healthy: "🥗",
+  "Comfort Food": "🍲"
+};
+
 // DISPLAY CURRENT RECIPE
 
 function displayRecipe() {
