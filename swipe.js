@@ -157,6 +157,7 @@ passButton.addEventListener("click", function () {
   setTimeout(function () {
 
     mealCard.classList.remove("card-pass");
+    showNextRecipe();
 
   }, 350);
 
