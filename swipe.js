@@ -56,7 +56,16 @@ function displayRecipe() {
 
   description.textContent =
     currentRecipe.description;
+const time =
+  mealCard.querySelector(".meal-meta span");
 
+time.textContent =
+  `⏱️ ${currentRecipe.totalTime} mins`;
+  const metaItems =
+  mealCard.querySelectorAll(".meal-meta span");
+
+metaItems[1].textContent =
+  `👨‍👩‍👧 ${currentRecipe.tags[1]}`;
 }
 // UPDATE PROGRESS
 
