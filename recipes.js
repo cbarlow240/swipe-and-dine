@@ -95,25 +95,29 @@ const recipes = [
   fat: {
     value: 24,
     unit: "g",
+    per100g: 6.86,
     status: "high"
   },
 
   saturates: {
     value: 9,
     unit: "g",
+    per100g: 2.57,
     status: "high"
   },
 
   sugars: {
     value: 3,
     unit: "g",
+    per100g: 0.86,
     status: "low"
   },
 
   salt: {
     value: 1.8,
     unit: "g",
-    status: "high"
+    per100g: 0.51,
+    status: "medium"
   },
 
   protein: 31,
