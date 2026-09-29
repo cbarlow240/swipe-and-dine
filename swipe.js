@@ -101,6 +101,28 @@ if (!difficultyBadge) {
 
 difficultyBadge.textContent =
   `⭐ ${currentRecipe.difficulty}`;
+
+  nutritionMeta.innerHTML = `
+  <span class="nutrition-calories">
+    ${currentRecipe.nutrition.calories.value} kcal
+  </span>
+
+  <span class="nutrition-${currentRecipe.nutrition.fat.status}">
+    FAT ${currentRecipe.nutrition.fat.value}g
+  </span>
+
+  <span class="nutrition-${currentRecipe.nutrition.saturates.status}">
+    SAT ${currentRecipe.nutrition.saturates.value}g
+  </span>
+
+  <span class="nutrition-${currentRecipe.nutrition.sugars.status}">
+    SUGARS ${currentRecipe.nutrition.sugars.value}g
+  </span>
+
+  <span class="nutrition-${currentRecipe.nutrition.salt.status}">
+    SALT ${currentRecipe.nutrition.salt.value}g
+  </span>
+`;
 }
 // UPDATE PROGRESS
 
