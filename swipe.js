@@ -65,6 +65,15 @@ function displayRecipe() {
   const description =
     mealCard.querySelector(".meal-details p");
 
+  const mealImage =
+  mealCard.querySelector(".meal-image");
+
+mealImage.src =
+  currentRecipe.image;
+
+mealImage.alt =
+  currentRecipe.name;
+
   cuisine.textContent =
     currentRecipe.cuisine.toUpperCase();
 
