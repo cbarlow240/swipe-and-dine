@@ -1,4 +1,3 @@
-console.log("Recipes loaded:", recipes);
 // ========================================
 // SWIPE & DINE - MEAL SWIPE PAGE
 // ========================================
